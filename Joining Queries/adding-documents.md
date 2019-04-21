@@ -20,6 +20,7 @@ PUT /department/_doc/2
 
 ## How to add based on the video as it differs from what was in the repository
 ```
+PUT /department
 {
   "mappings": {
     "_doc": {
