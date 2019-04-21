@@ -18,6 +18,23 @@ PUT /department/_doc/2
 }
 ```
 
+## How to add based on the video as it differs from what was in the repository
+```
+{
+  "mappings": {
+    "_doc": {
+      "properties": {
+        "name": {
+          "type": "text"
+        },
+        "employees": {
+          "type": "nested"
+        }
+        }
+      }
+    }
+  }
+```
 ## Adding employees for departments
 
 ```
