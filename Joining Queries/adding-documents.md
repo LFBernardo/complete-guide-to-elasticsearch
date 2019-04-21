@@ -18,7 +18,7 @@ PUT /department/_doc/2
 }
 ```
 
-## How to add based on the video as it differs from what was in the repository
+## How to add index based on the video as it differs from what was in the repository
 ```
 PUT /department
 {
@@ -113,5 +113,44 @@ PUT /department/_doc/8?routing=1
     "name": "employee",
     "parent": 1
   }
+}
+```
+## How to add users based on the video as it differs from what was in the repository
+```
+POST /department/_doc/1
+{
+  "name": "Development",
+  "employees": [
+    {
+      "name": "Eric Green",
+      "age": 39,
+      "gender": "M",
+      "Position": "Big Data Analys"
+    },
+    {
+      "name": "James Taylor",
+      "age": 27,
+      "gender": "M",
+      "Position": "Software Devleoper"
+    },
+    {
+      "name": "Gary Jenkins",
+      "age": 21,
+      "gender": "M",
+      "Position": "Intern"
+    },
+    {
+      "name": "Julie Powell",
+      "age": 26,
+      "gender": "F",
+      "Position": "Intern"
+    },
+    {
+      "name": "Benjamin Smith",
+      "age": 46,
+      "gender": "M",
+      "Position": "Senior Software Engineer"
+    }
+    ]
 }
 ```
